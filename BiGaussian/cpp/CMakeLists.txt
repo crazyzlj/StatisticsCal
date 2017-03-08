@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.6)
+project(BiGaussian)
+set (BUILD_SHARED_LIBS OFF)
+set (BIGAUSSIAN config/SwapStringDouble.cpp config/ConfigParser.cpp stats.cpp  main.cpp)
+add_executable (bigaussian ${BIGAUSSIAN})
+install(TARGETS bigaussian DESTINATION bin)
